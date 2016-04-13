@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8" lang="ru">
+   <title>Nure</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="style.css">
+	<META Name="autor" Content="Dmitry Shmatko PE-15-6">
+	<META Name="description" Content="text Radioelectronics">
+	<META Name="keywords" Content="text, harkov, htext�	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="style.css">
+	
+
+</head>
+<body>
+	<div align="center" class="wrapper">
+		<section><nav id="menu" class="default">
+			<ul>
+				<li class="logo"><a href="#"><img src="image/logo.jpg" height="40px" /></a></li>
+				<li><a href="index.html"><b>Home</b></a></li>
+	            <li><a href="news.html"><b>News</b></a></li>
+	            <li><a href="team.html"><b>Events</b></a></li>
+				
+	            
+	        </ul>
+	    </nav>
+	<div class="qwerty">	
+	</div>
+		<div class="container">
+			
+	<table class="first">
+		<tr>
+			<td class="photo"><img width="300px" src="image/news1.jpg" /></td>
+			<td class="photo"><img width="300px" src="image/news2.jpg" /></td>
+			<td class="photo"><img width="300px" src="image/news3.jpg" /></td>
+		</tr>
+		<tr>
+			<td><a class="mean">Predstavitel'stvo OON v Ukraine</td>
+			<td><a class="mean">Departament mezhdunarodnogo sotrudnichestva </td>
+			<td><a class="mean">16 dekabrja v Har'kovskom nacional'nom </td>
+		</tr>
+		
+		<tr>
+			<td class="bottom"><a class="a1"><main>Predstavitel'stvo OON v Ukraine provodit Informacionnuju kampaniju: Celi Ustojchivogo Razvitija v Ukraine s 13 po 19 dekabrja v 4-h gorodah Ukrainy: Har'kove, Kramatorske, Severodonecke i Mariupole. Cel'ju kampanii javljaetsja povyshenie osvedomlennosti ukrainskoj molodezhi, institutov grazhdanskogo obshhestva i molodezhnyh aktivistov o novoj povestke dnja do 2030 goda i 17 novyh celej ustojchivogo razvitija putem provedenija vstrech, lekcij, seminarov i master-klassov.</main><a href="news.html"><i>More</i> </a></td>
+			<td class="bottom"><a class="a1"><main>Departament mezhdunarodnogo sotrudnichestva Harkovskogo nacional'nogo universiteta radiojelektroniki sovmestno s prepodavateljami, studentami i komandoj GO krainian Students Cluster zapustil novuju platformu s aktual'noj informaciej ob akademicheskoj mobil'nosti v Har'kovskom nacional'nom universitete radiojelektroniki. Prezhde vsego, akademicheskaja mobil'nost' jeto vozmozhnost' prinimat' uchastie v mezhdunarodnyh issledovatel'skih, nauchnyh i uchebnyh programmah. Osnovnoj cel'ju takih programm javljaetsja razvitie mezhdunarodnogo sotrudnichestva, povyshenie kachestva obrazovanija i podgotovka kvalificirovannyh specialistov.</main><a href="news.html"><i>More</i> </a></td>
+			<td class="bottom"><a class="a1"><main>16 dekabrja v Har'kovskom nacional'nom universitete radiojelektroniki sostojalsja kruglyj stol, v hode kotorogo obsuzhdali soglashenie o sotrudnichestve s kompaniej Festo.
+V.i.o.rektora k.t.n., docent Jeduard Rubin, dekan fakul'teta AKT Aleksandr Filipenko i zavedujushhij kafedroj TAPR Igor' Nevljudov proveli vstrechu s predstaviteljami kompanii i obgovorili osnovnye napravlenija raboty.
+V ramkah sotrudnichestva s kompaniej planiruetsja obespechenie hoda uchebnogo processa v universitete sovremennym oborudovaniem po promyshlennoj avtomatizacii, robototehnike i mehatronike.
+Poskol'ku oborudovanie, kotoroe budet predostavleno vuzu, dovol'no slozhnoe v upravlenii, budet sozdan dopolnitel'nyj uchebnyj centr, gde prepodavateli smogut sami obnovit' svoi umenija raboty s takim oborudovaniem, chtoby potom peredat' ih studentam. I chto samoe interesnoe v otdelnyh pomeshhenijah soberetsja trenirovochnaja tehnika, kotoruju ne strashno budet slomat ved bez oshibok ne byvaet. Takim obrazom, studenty perestanut bojat'sja novogo i budut bolee uverenno uchitsja i rabotat'.</main><a href="news.html"> <i> More </i>  </a></td>
+		
+		
+		
+		</table>
+		</div>
+		
+		
+		
+
+	
+	</div>
+
+	
+	<script type="text/javascript">
+		$(document).ready(function(){
+
+        var $menu = $("#menu");
+
+        $(window).scroll(function(){
+            if ( $(this).scrollTop() > 100 && $menu.hasClass("default") ){
+                $menu.fadeOut('fast',function(){
+                    $(this).removeClass("default")
+                           .addClass("fixed transbg")
+                           .fadeIn('fast');
+                });
+            } else if($(this).scrollTop() <= 100 && $menu.hasClass("fixed")) {
+                $menu.fadeOut('fast',function(){
+                    $(this).removeClass("fixed transbg")
+                           .addClass("default")
+                           .fadeIn('fast');
+                });
+            }
+        });//scroll
+
+        $menu.hover(
+            function(){
+                if( $(this).hasClass('fixed') ){
+                    $(this).removeClass('transbg');
+                }
+            },
+            function(){
+                if( $(this).hasClass('fixed') ){
+                    $(this).addClass('transbg');
+                }
+            });//hover
+    });//jQuery
+		
+	</script>
+	
+    <noscript>
+        <h1 style="font-family: Arial"> Включите отображение скриптов в вашем браузере</h1>
+    </noscript>
+
+
+
+</body>
+</html>
